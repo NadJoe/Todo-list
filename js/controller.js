@@ -162,11 +162,12 @@
 			items = data;
 		});
 
-		items.forEach(function(item) {
+		// affichage 2 fois quand un todo completed est supprimer
+		/*items.forEach(function(item) {  // FONCTION INUTILE
 			if (item.id === id) {
 				console.log("Element with ID: " + id + " has been removed.");
 			}
-		});
+		});*/
 
 		self.model.remove(id, function () {
 			self.view.render('removeItem', id);
